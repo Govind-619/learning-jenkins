@@ -30,8 +30,17 @@
   <build>
     <pluginManagement><plugins>
             <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.0.2</version> </plugin>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.0.2</version> 
+    <configuration>
+        <archive>
+            <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass>com.learningjenkins.App</mainClass>
+                        </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
             </plugins>
     </pluginManagement>
     
